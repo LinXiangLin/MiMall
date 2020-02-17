@@ -7,8 +7,8 @@
 
 <script>
 
-//import axios from 'axios'
-import jsonp from 'jsonp'
+import storage from './storage'
+// import jsonp from 'jsonp'
 export default {
   name: 'App',
   components: {
@@ -20,6 +20,10 @@ export default {
     }
   },
   mounted(){
+//    storage.setItem('a',1);
+ //   storage.setItem('abc',{a:1},'user');
+ //storage.clear('a');
+  storage.clear('a','user');
   }
 }
 </script>
